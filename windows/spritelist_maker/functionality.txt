@@ -1,0 +1,23 @@
+Introduction:
+  Names enclosed in single quotes refer to terms defined in the TERMS section.
+
+TERMS:
+  Editing area - area in which you can do selection of rectangle with mouse, drag it, resize it, or delete it.
+  Properties area - area in which you can edit settings of instruments.
+  Rectangle array - an instrument that duplicates selected rectangle a certain number of times in the specified direction. You can also specify the offset in pixels of each rectangle and the number of repetitions in the 'properties area'. You can unpin specified rectangle, so it makes a new 'rectangle array', or single rectangle if it is in the end of set.
+  Preview area - area in which you can play sprite animation of the selected type.
+
+1) Making spriteset.
+  1.1) Loading image via dialog window.
+  1.2) Mouse selection of sprite rectangle: in the 'editing area' you can make selection of multiple image areas with mouse.
+    1.2.1) Using the 'rectangle array' tool. You can unpin selected rectangle (see behaviour in TERMS).
+    1.2.2) Dragging selected rectangle with mouse or arrows. If any instrument applied, then all set of rectangles will be moved.
+    1.2.3) Resizing of sprite-bounding rectangle with mouse and combination of keyboard keys.
+  1.3) Adding frames in animation and playing selected one. Name of animation can be changed, as well as other new animations can be added.
+2) Saving spriteset.
+  Animations can be saved seperately by their names, or all in one file.
+  2.1) Separatelly. All animations will be saved in separate files: raster will named as animation, the general configuration file will contain the names of animations and the number of frames in them.
+    2.1.1) "Compress" option can be selected, so it makes two files per each animation: the configuration file, and, directly, the spritelist itself. This option will just crop each frame and put in cfg file info about XY offset from upper-left corner and it's width/height.
+  2.2) All in one. All animations will be saved in one file. Frames by rows and animations by columns. Frames of each row have the same dimensions. Config file will contain some number of strings with information: animation name, frame dims, frame count.
+3) Saving environment.
+  You can save your work into project file, and continue in the future.
