@@ -1,0 +1,41 @@
+# Logs
+*.log
+# anywhere/my.log, NOT my.logs | my.log.tmp
+
+# Only relative to .gitignore file directory
+# /first_example/
+# second/example/
+/windows/.vs/
+
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
