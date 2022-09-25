@@ -5,7 +5,7 @@
 # Only relative to .gitignore file directory
 # /first_example/
 # second/example/
-/windows/.vs/
+.vs/
 
 # Prerequisites
 *.d
@@ -39,3 +39,13 @@
 *.exe
 *.out
 *.app
+
+# VS trash
+**/x64/**/*.recipe
+**/x64/**/*.ilk
+**/x64/**/*.tlog
+**/x64/**/*.lastbuildstate
+**/x64/**/*.idb
+**/x64/**/*.pdb
+**/x64/**/*.ipdb
+**/x64/**/*.iobj
